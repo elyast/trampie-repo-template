@@ -1,0 +1,7 @@
+virtualbox
+.rvmrc
+.tmp
+*.dpkg-dist
+*.sublime-workspace
+*.log
+action_provision

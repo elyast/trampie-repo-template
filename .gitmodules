@@ -1,0 +1,3 @@
+[submodule "trampie"]
+	path = trampie
+	url = https://github.com/elyast/trampie.git

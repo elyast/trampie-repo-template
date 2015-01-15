@@ -1,0 +1,28 @@
+aws:
+  defaults:
+    proxy: http://proxy_host:proxy_port
+    nic: eth0
+    batch_size: 10
+    ssh_username: root
+    type: m1.small
+
+  region_name:
+    access_key: xxx
+    secret_key: xxx
+    keyname: key_name
+    ssh_keyfile: xxx.pem
+    availability_zones:
+      - zone_name
+    region: http://hostname:8773/services/Eucalyptus
+    security_groups:
+      - all
+    ami: emi-xxx
+
+virtualbox:
+  defaults:
+    batch_size: 1
+    box: precise64
+    box_url: http://files.vagrantup.com/precise64.box
+  vbox:
+    nic: eth1
+    nic_name: "en1: Wi-Fi (AirPort)"

@@ -1,0 +1,19 @@
+defaults:
+  minion:
+    master: default-master
+  grains:
+    roles:
+      - java.openjdk
+
+default-master:
+  provider: vbox
+  memory: 4096
+  cpus: 1
+  grains:
+    roles:
+      - postgresql
+  synced_folders:
+    ./states: /srv/states
+    ./pillar: /srv/pillar
+  forwarded_ports:
+    80: 80
